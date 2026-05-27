@@ -1,0 +1,154 @@
+/* ============================================================
+   LUXPORT v2 — animations.css
+   Snap-style, fast, aggressive motion
+   ============================================================ */
+
+/* ── KEYFRAMES ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes snapIn {
+  0%   { opacity: 0; transform: translateY(40px) scale(0.96); }
+  60%  { opacity: 1; transform: translateY(-4px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 12px var(--red); }
+  50%      { opacity: 0.4; box-shadow: 0 0 4px var(--red); }
+}
+
+@keyframes speedLine {
+  0%   { transform: translateX(20px); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: translateX(-30px); opacity: 0; }
+}
+
+/* ── HERO ENTRANCE ── */
+.hero__tag    { opacity: 0; animation: fadeUp 0.7s 0.2s var(--snap) forwards; }
+.hero__title  { opacity: 0; animation: snapIn 0.8s 0.35s var(--snap) forwards; }
+.hero__desc   { opacity: 0; animation: fadeUp 0.7s 0.55s var(--snap) forwards; }
+.hero__actions{ opacity: 0; animation: fadeUp 0.7s 0.7s var(--snap) forwards; }
+.hero__stats  { opacity: 0; animation: fadeUp 0.7s 0.85s var(--snap) forwards; }
+
+.hero__tag-dot { animation: pulseDot 2.2s ease-in-out infinite; }
+
+.hero__speed-lines span { animation: speedLine 1.8s ease-in-out infinite; }
+.hero__speed-lines span:nth-child(1) { animation-delay: 0s; }
+.hero__speed-lines span:nth-child(2) { animation-delay: 0.3s; }
+.hero__speed-lines span:nth-child(3) { animation-delay: 0.6s; }
+.hero__speed-lines span:nth-child(4) { animation-delay: 0.9s; }
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px) scale(0.97);
+  transition: opacity 0.6s var(--snap), transform 0.6s var(--snap);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal:nth-child(4) { transition-delay: 0.3s; }
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.5s var(--snap), transform 0.5s var(--snap);
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.reveal-left:nth-child(2) { transition-delay: 0.08s; }
+.reveal-left:nth-child(3) { transition-delay: 0.16s; }
+.reveal-left:nth-child(4) { transition-delay: 0.24s; }
+.reveal-left:nth-child(5) { transition-delay: 0.32s; }
+.reveal-left:nth-child(6) { transition-delay: 0.4s; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── STEP staggered reveal (triggered via JS) ── */
+.step {
+  opacity: 0;
+  transform: translateY(36px) scale(0.97);
+  transition: opacity 0.55s var(--snap), transform 0.55s var(--snap);
+}
+.step.visible { opacity: 1; transform: translateY(0) scale(1); }
+
+/* ── PRINCIPLE staggered (triggered via JS) ── */
+.principle {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity 0.5s var(--snap), transform 0.5s var(--snap),
+              border-left-color 0.35s, background 0.35s, box-shadow 0.35s;
+}
+.principle.visible { opacity: 1; transform: translateX(0); }
+
+/* Remove duplicate reveal-left since principles use JS-driven class */
+.principles .reveal-left { opacity: 0; transform: translateX(-28px); }
+.principles .reveal-left.visible { opacity: 1; transform: translateX(0); }
+
+/* ── DIR-TAB active accent pulse ── */
+@keyframes redPulse {
+  0%,100% { box-shadow: none; }
+  50%      { box-shadow: inset 3px 0 0 var(--red-bright); }
+}
+.dir-tab.active { animation: none; }
+
+/* ── COUNTRIES BAR pill hover ── */
+.country-pill { transition: background 0.25s, transform 0.2s; }
+.country-pill:hover { transform: translateY(-2px); }
+
+/* ── CASE cards hover speed effect ── */
+.case {
+  transition: transform 0.4s var(--snap), border-color 0.4s, box-shadow 0.4s;
+}
+.case:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(200,32,26,0.15), 0 0 0 1px var(--red);
+}
+
+/* ── TRUST items hover ── */
+.trust__item {
+  transition: border-top-color 0.3s, transform 0.3s;
+}
+.trust__item:hover {
+  border-top-color: var(--red-bright);
+  transform: translateY(-4px);
+}
+
+/* ── HERO speed lines animation ── */
+.hero__speed-lines span {
+  animation: speedLine 2s ease-in-out infinite;
+}
+.hero__speed-lines span:nth-child(1) { animation-delay: 0s; }
+.hero__speed-lines span:nth-child(2) { animation-delay: 0.4s; }
+.hero__speed-lines span:nth-child(3) { animation-delay: 0.8s; }
+.hero__speed-lines span:nth-child(4) { animation-delay: 1.2s; }

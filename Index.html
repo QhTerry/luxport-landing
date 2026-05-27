@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxport — Автомобили из-за рубежа под ключ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav__logo">LUX<em>PORT</em></a>
+  <ul class="nav__links">
+    <li><a href="#how">Процесс</a></li>
+    <li><a href="#calc">Калькулятор</a></li>
+    <li><a href="#directions">Направления</a></li>
+    <li><a href="#cases">Кейсы</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#form" class="nav__cta">Получить расчёт</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <video class="hero__video" autoplay muted loop playsinline poster="hero-poster.png">
+    <source src="hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <div class="hero__tag">
+      <span class="hero__tag-dot"></span>
+      Перегон из Европы · Азии · ОАЭ
+    </div>
+    <h1 class="hero__title">
+      Авто мечты —<br>
+      <span class="hero__title-red">без</span>
+      <span class="hero__title-outline">риска</span>
+    </h1>
+    <p class="hero__desc">
+      Пригоняем автомобили <strong>напрямую с площадок</strong>
+      Германии, Кореи, Китая и ОАЭ. Договор, фото до оплаты, таможня под ключ.
+    </p>
+    <div class="hero__actions">
+      <a href="#form" class="btn-red">Подобрать автомобиль</a>
+      <a href="https://t.me/luxportru" class="btn-outline" target="_blank" rel="noopener">
+        Telegram-канал <span class="arrow">→</span>
+      </a>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <div class="hero__stat-num" data-count="340" data-suffix="+">0+</div>
+        <div class="hero__stat-label">Авто доставлено</div>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-num" data-count="3" data-suffix=" года">0</div>
+        <div class="hero__stat-label">На рынке</div>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <div class="hero__stat-num" data-count="0" data-suffix="">0</div>
+        <div class="hero__stat-label">Потерянных авансов</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__speed-lines">
+    <span style="width:90px"></span>
+    <span style="width:130px"></span>
+    <span style="width:60px"></span>
+    <span style="width:110px"></span>
+  </div>
+</section>
+
+<!-- БЛОК СТРАН — только флаг + название -->
+<div class="countries-bar">
+  <div class="countries-bar__inner">
+    <div class="country-pill"><span class="country-pill__flag">🇩🇪</span><span class="country-pill__name">Германия</span></div>
+    <div class="countries-bar__divider"></div>
+    <div class="country-pill"><span class="country-pill__flag">🇰🇷</span><span class="country-pill__name">Корея</span></div>
+    <div class="countries-bar__divider"></div>
+    <div class="country-pill"><span class="country-pill__flag">🇨🇳</span><span class="country-pill__name">Китай</span></div>
+    <div class="countries-bar__divider"></div>
+    <div class="country-pill"><span class="country-pill__flag">🇦🇪</span><span class="country-pill__name">ОАЭ</span></div>
+    <div class="countries-bar__divider"></div>
+    <div class="country-pill"><span class="country-pill__flag">🇯🇵</span><span class="country-pill__name">Япония</span></div>
+    <div class="countries-bar__divider"></div>
+    <div class="countries-bar__tagline">Договор · Фото до оплаты · Таможня под ключ</div>
+  </div>
+</div>
+
+<!-- HOW -->
+<section class="how" id="how">
+  <div class="section-video-bg">
+    <video autoplay muted loop playsinline><source src="hero-video.mp4" type="video/mp4"></video>
+    <div class="section-video-overlay"></div>
+  </div>
+  <div class="how__inner">
+    <div class="how__header">
+      <div>
+        <span class="label">Процесс</span>
+        <h2 class="title">Как мы работаем</h2>
+      </div>
+      <p class="sub">Три шага от заявки до ключей. Каждый этап фиксируется, каждый рубль — в договоре.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__number">01</div>
+        <h3 class="step__title">Заявка и подбор</h3>
+        <p class="step__text">Заполняете анкету — марка, бюджет, пожелания. Ищем варианты на площадках и присылаем подборку с фото и <strong>полной стоимостью с таможней</strong>.</p>
+        <p class="step__note"><strong>Бесплатно и без обязательств.</strong> Не подошло — разойдёмся без претензий.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">02</div>
+        <h3 class="step__title">Договор и оплата</h3>
+        <p class="step__text">Подписываем договор с фиксированной ценой. Фотоотчёт с площадки. Аванс — <strong>только после вашего согласия</strong> с конкретным авто.</p>
+        <p class="step__note"><strong>Итоговая цена в договоре</strong> — никаких «доплатите по дороге».</p>
+      </div>
+      <div class="step">
+        <div class="step__number">03</div>
+        <h3 class="step__title">Перегон и оформление</h3>
+        <p class="step__text">Выкупаем, везём, проходим таможню, получаем СБКТС и ПТС. Отчитываемся <strong>по каждому этапу</strong> — от старта до вашего города.</p>
+        <p class="step__note"><strong>Под ключ:</strong> авто с документами, готовое к постановке на учёт.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КАЛЬКУЛЯТОР + СРАВНЕНИЕ (объединённый блок) -->
+<section class="calc" id="calc">
+  <div class="calc__header">
+    <span class="label">Полезный инструмент</span>
+    <h2 class="title">Посчитайте свою выгоду</h2>
+    <p class="sub">Два режима — выберите удобный способ расчёта.</p>
+  </div>
+
+  <!-- Переключатель режима -->
+  <div class="calc__mode-switch">
+    <button class="calc__mode-btn active" id="modeBtnRF" data-mode="rf">
+      <span class="calc__mode-icon">₽</span>
+      Знаю цену в России
+    </button>
+    <button class="calc__mode-btn" id="modeBtnAbroad" data-mode="abroad">
+      <span class="calc__mode-icon">✈</span>
+      Знаю бюджет на авто
+    </button>
+  </div>
+
+  <!-- РЕЖИМ 1: знаю цену в РФ -->
+  <div class="calc__panel active" id="panelRF">
+    <div class="calc__form-grid">
+      <div class="calc__field">
+        <label class="calc__label">Цена в России, ₽</label>
+        <input type="number" id="rfPrice" class="calc__input" placeholder="4 950 000">
+      </div>
+      <div class="calc__field">
+        <label class="calc__label">Объём двигателя</label>
+        <select id="rfEngine" class="calc__input">
+          <option value="1.5">до 1.5 л</option>
+          <option value="2.0" selected>1.5 – 2.0 л</option>
+          <option value="2.5">2.0 – 2.5 л</option>
+          <option value="3.0">2.5 – 3.0 л</option>
+          <option value="3.5">3.0 – 3.5 л</option>
+          <option value="4.0">свыше 3.5 л</option>
+        </select>
+      </div>
+      <div class="calc__field">
+        <label class="calc__label">Страна</label>
+        <select id="rfCountry" class="calc__input">
+          <option value="best">Лучшая автоматически</option>
+          <option value="de">🇩🇪 Германия</option>
+          <option value="kr">🇰🇷 Корея</option>
+          <option value="cn">🇨🇳 Китай</option>
+          <option value="ae">🇦🇪 ОАЭ</option>
+          <option value="jp">🇯🇵 Япония</option>
+        </select>
+      </div>
+      <button class="btn-red calc__btn" id="rfCalcBtn">Рассчитать →</button>
+    </div>
+    <!-- Быстрые примеры -->
+    <div class="calc__presets">
+      <span class="calc__presets-label">Быстро попробовать:</span>
+      <button class="calc__preset" data-mode="rf" data-price="4950000" data-engine="2.0" data-country="de">BMW 5 Series</button>
+      <button class="calc__preset" data-mode="rf" data-price="9000000" data-engine="3.0" data-country="ae">Mercedes GLE</button>
+      <button class="calc__preset" data-mode="rf" data-price="3000000" data-engine="2.0" data-country="kr">Hyundai Tucson</button>
+      <button class="calc__preset" data-mode="rf" data-price="6800000" data-engine="2.5" data-country="jp">Lexus RX</button>
+    </div>
+  </div>
+
+  <!-- РЕЖИМ 2: знаю бюджет -->
+  <div class="calc__panel" id="panelAbroad">
+    <div class="calc__form-grid">
+      <div class="calc__field">
+        <label class="calc__label">Мой бюджет, ₽</label>
+        <input type="number" id="abBudget" class="calc__input" placeholder="3 000 000">
+      </div>
+      <div class="calc__field">
+        <label class="calc__label">Объём двигателя</label>
+        <select id="abEngine" class="calc__input">
+          <option value="1.5">до 1.5 л</option>
+          <option value="2.0" selected>1.5 – 2.0 л</option>
+          <option value="2.5">2.0 – 2.5 л</option>
+          <option value="3.0">2.5 – 3.0 л</option>
+          <option value="3.5">3.0 – 3.5 л</option>
+          <option value="4.0">свыше 3.5 л</option>
+        </select>
+      </div>
+      <div class="calc__field">
+        <label class="calc__label">Страна</label>
+        <select id="abCountry" class="calc__input">
+          <option value="best">Лучшая автоматически</option>
+          <option value="de">🇩🇪 Германия</option>
+          <option value="kr">🇰🇷 Корея</option>
+          <option value="cn">🇨🇳 Китай</option>
+          <option value="ae">🇦🇪 ОАЭ</option>
+          <option value="jp">🇯🇵 Япония</option>
+        </select>
+      </div>
+      <button class="btn-red calc__btn" id="abCalcBtn">Рассчитать →</button>
+    </div>
+    <div class="calc__presets">
+      <span class="calc__presets-label">Быстро попробовать:</span>
+      <button class="calc__preset" data-mode="ab" data-budget="2000000" data-engine="2.0" data-country="best">2 млн ₽</button>
+      <button class="calc__preset" data-mode="ab" data-budget="3500000" data-engine="2.0" data-country="best">3.5 млн ₽</button>
+      <button class="calc__preset" data-mode="ab" data-budget="6000000" data-engine="2.5" data-country="best">6 млн ₽</button>
+      <button class="calc__preset" data-mode="ab" data-budget="10000000" data-engine="3.0" data-country="best">10 млн ₽</button>
+    </div>
+  </div>
+
+  <!-- РЕЗУЛЬТАТ -->
+  <div class="calc__result" id="calcResult" style="display:none">
+    <div class="calc__result-main">
+      <div class="calc__result-saving">
+        <div class="calc__saving-label">Ваша экономия</div>
+        <div class="calc__saving-num" id="resSavingNum">—</div>
+        <div class="calc__saving-pct" id="resSavingPct">—</div>
+      </div>
+      <div class="calc__result-details">
+        <div class="calc__result-row">
+          <span>Стоимость в России</span>
+          <span id="resRFPrice" class="calc__result-row-val">—</span>
+        </div>
+        <div class="calc__result-row">
+          <span>Через Luxport под ключ</span>
+          <span id="resOurPrice" class="calc__result-row-val green">—</span>
+        </div>
+        <div class="calc__result-row calc__result-row--country">
+          <span>Оптимальная страна</span>
+          <span id="resCountry" class="calc__result-row-val">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="calc__result-cta">
+      <p class="calc__result-cta-text">Хотите получить точный расчёт с реальными авто под ваши параметры?</p>
+      <a href="#form" class="btn-red calc__result-cta-btn">Оставить заявку — ответим за 2 часа</a>
+      <p class="calc__disclaimer">Расчёт ориентировочный. Точная стоимость зависит от курса валют и актуальных ставок таможни.</p>
+    </div>
+  </div>
+</section>
+
+<!-- НАПРАВЛЕНИЯ --></section>
+
+<!-- НАПРАВЛЕНИЯ -->
+<section class="directions" id="directions">
+  <div class="directions__header">
+    <span class="label">Направления</span>
+    <h2 class="title">Выберите страну</h2>
+    <p class="sub">Нажмите на направление — узнайте сроки, особенности и популярные марки.</p>
+  </div>
+  <div class="directions__layout">
+    <div class="dir-tabs">
+      <button class="dir-tab active" data-dir="de"><span class="dir-tab__flag">🇩🇪</span><span class="dir-tab__name">Германия</span><span class="dir-tab__arrow">→</span></button>
+      <button class="dir-tab" data-dir="kr"><span class="dir-tab__flag">🇰🇷</span><span class="dir-tab__name">Корея</span><span class="dir-tab__arrow">→</span></button>
+      <button class="dir-tab" data-dir="cn"><span class="dir-tab__flag">🇨🇳</span><span class="dir-tab__name">Китай</span><span class="dir-tab__arrow">→</span></button>
+      <button class="dir-tab" data-dir="ae"><span class="dir-tab__flag">🇦🇪</span><span class="dir-tab__name">ОАЭ</span><span class="dir-tab__arrow">→</span></button>
+      <button class="dir-tab" data-dir="jp"><span class="dir-tab__flag">🇯🇵</span><span class="dir-tab__name">Япония</span><span class="dir-tab__arrow">→</span></button>
+    </div>
+    <div class="dir-panel">
+      <div class="dir-info active" id="dir-de">
+        <div class="dir-info__top"><div class="dir-info__flag">🇩🇪</div><div><h3 class="dir-info__title">Германия</h3><p class="dir-info__sub">Лучший выбор для премиум-сегмента</p></div></div>
+        <div class="dir-info__metrics">
+          <div class="dir-metric"><div class="dir-metric__val">15–25</div><div class="dir-metric__label">Дней срок</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">от 400К ₽</div><div class="dir-metric__label">Экономия</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">BMW · Audi · Mercedes</div><div class="dir-metric__label">Популярные марки</div></div>
+        </div>
+        <ul class="dir-info__features">
+          <li>Огромный выбор премиальных авто с пробегом</li>
+          <li>Обслуживание у официальных дилеров</li>
+          <li>Проверка по ADAC, TÜV и Carfax Europe</li>
+          <li>Минимальный коррозионный износ — мягкий климат</li>
+          <li>7–10 дней перегона до границы</li>
+        </ul>
+        <a href="#form" class="dir-info__cta btn-red">Заказать из Германии</a>
+      </div>
+      <div class="dir-info" id="dir-kr">
+        <div class="dir-info__top"><div class="dir-info__flag">🇰🇷</div><div><h3 class="dir-info__title">Южная Корея</h3><p class="dir-info__sub">Новые авто по ценам ниже российских</p></div></div>
+        <div class="dir-info__metrics">
+          <div class="dir-metric"><div class="dir-metric__val">25–35</div><div class="dir-metric__label">Дней срок</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">от 300К ₽</div><div class="dir-metric__label">Экономия</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">Hyundai · Kia · Genesis</div><div class="dir-metric__label">Популярные марки</div></div>
+        </div>
+        <ul class="dir-info__features">
+          <li>Корейская сборка с заводской гарантией</li>
+          <li>Минимальный пробег — многие почти новые</li>
+          <li>Богатые комплектации по цене базовых в РФ</li>
+          <li>Доставка морем — надёжно и застраховано</li>
+          <li>Genesis дешевле немецких аналогов на 30–40%</li>
+        </ul>
+        <a href="#form" class="dir-info__cta btn-red">Заказать из Кореи</a>
+      </div>
+      <div class="dir-info" id="dir-cn">
+        <div class="dir-info__top"><div class="dir-info__flag">🇨🇳</div><div><h3 class="dir-info__title">Китай</h3><p class="dir-info__sub">Максимальная комплектация за минимум</p></div></div>
+        <div class="dir-info__metrics">
+          <div class="dir-metric"><div class="dir-metric__val">20–30</div><div class="dir-metric__label">Дней срок</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">от 250К ₽</div><div class="dir-metric__label">Экономия</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">Chery · Haval · Li Auto</div><div class="dir-metric__label">Популярные марки</div></div>
+        </div>
+        <ul class="dir-info__features">
+          <li>Полный фарш: панорама, вентиляция, массаж</li>
+          <li>Электромобили и гибриды 600+ км запаса</li>
+          <li>Цена в 1,5–2 раза ниже аналогов в России</li>
+          <li>Быстрая доставка через границу</li>
+          <li>Li Auto и Zeekr — новые топовые бренды</li>
+        </ul>
+        <a href="#form" class="dir-info__cta btn-red">Заказать из Китая</a>
+      </div>
+      <div class="dir-info" id="dir-ae">
+        <div class="dir-info__top"><div class="dir-info__flag">🇦🇪</div><div><h3 class="dir-info__title">ОАЭ</h3><p class="dir-info__sub">Американские версии и редкие комплектации</p></div></div>
+        <div class="dir-info__metrics">
+          <div class="dir-metric"><div class="dir-metric__val">14–20</div><div class="dir-metric__label">Дней срок</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">от 500К ₽</div><div class="dir-metric__label">Экономия</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">Mercedes · Cadillac · Dodge</div><div class="dir-metric__label">Популярные марки</div></div>
+        </div>
+        <ul class="dir-info__features">
+          <li>American spec — V8, большие объёмы двигателей</li>
+          <li>Без налога с продаж — цены существенно ниже</li>
+          <li>Один из самых быстрых маршрутов доставки</li>
+          <li>Редкие цвета и комплектации недоступные в РФ</li>
+          <li>Cadillac Escalade, Dodge RAM — хиты из ОАЭ</li>
+        </ul>
+        <a href="#form" class="dir-info__cta btn-red">Заказать из ОАЭ</a>
+      </div>
+      <div class="dir-info" id="dir-jp">
+        <div class="dir-info__top"><div class="dir-info__flag">🇯🇵</div><div><h3 class="dir-info__title">Япония</h3><p class="dir-info__sub">Легендарное качество сборки</p></div></div>
+        <div class="dir-info__metrics">
+          <div class="dir-metric"><div class="dir-metric__val">30–40</div><div class="dir-metric__label">Дней срок</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">от 350К ₽</div><div class="dir-metric__label">Экономия</div></div>
+          <div class="dir-metric"><div class="dir-metric__val">Toyota · Lexus · Nissan</div><div class="dir-metric__label">Популярные марки</div></div>
+        </div>
+        <ul class="dir-info__features">
+          <li>Идеальное техническое состояние</li>
+          <li>Объективно низкий пробег — дороги дорогие</li>
+          <li>Lexus выгоднее немецких аналогов на 40–60%</li>
+          <li>Прозрачная история через аукционные листы</li>
+          <li>Правый руль — по запросу клиента</li>
+        </ul>
+        <a href="#form" class="dir-info__cta btn-red">Заказать из Японии</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="cases" id="cases">
+  <div class="section-video-bg">
+    <video autoplay muted loop playsinline><source src="hero-video.mp4" type="video/mp4"></video>
+    <div class="section-video-overlay"></div>
+  </div>
+  <div class="cases__inner">
+    <div class="cases__header">
+      <div><span class="label">Реальные сделки</span><h2 class="title">Последние кейсы</h2></div>
+      <p class="sub" style="max-width:340px">Конкретика: откуда, за сколько, сколько сэкономил клиент.</p>
+    </div>
+    <div class="cases__scroll">
+      <div class="cases__grid">
+        <article class="case reveal">
+          <div class="case__img-wrap">
+            <img src="car-bmw.webp" alt="BMW 5 Series 2022" class="case__photo">
+          </div>
+          <div class="case__body">
+            <div class="case__tag">🇩🇪 Германия · Март 2025</div>
+            <div class="case__name">BMW 5 Series 2022</div>
+            <div class="case__metrics">
+              <div><div class="case__metric-label">Срок</div><div class="case__metric-val">21 день</div></div>
+              <div><div class="case__metric-label">Пробег</div><div class="case__metric-val">34 000 км</div></div>
+              <div><div class="case__metric-label">Под ключ</div><div class="case__metric-val">4,15 млн ₽</div></div>
+              <div><div class="case__metric-label">Экономия</div><div class="case__metric-val green">−790 000 ₽</div></div>
+            </div>
+            <p class="case__quote">«Сначала увидел авто — потом заплатил. Так и должно быть.» — Андрей, Москва</p>
+          </div>
+        </article>
+        <article class="case reveal">
+          <div class="case__img-wrap">
+            <img src="car-tucson.webp" alt="Hyundai Tucson 2023" class="case__photo">
+          </div>
+          <div class="case__body">
+            <div class="case__tag">🇰🇷 Корея · Февраль 2025</div>
+            <div class="case__name">Hyundai Tucson 2023</div>
+            <div class="case__metrics">
+              <div><div class="case__metric-label">Срок</div><div class="case__metric-val">28 дней</div></div>
+              <div><div class="case__metric-label">Пробег</div><div class="case__metric-val">9 000 км</div></div>
+              <div><div class="case__metric-label">Под ключ</div><div class="case__metric-val">2,59 млн ₽</div></div>
+              <div><div class="case__metric-label">Экономия</div><div class="case__metric-val green">−410 000 ₽</div></div>
+            </div>
+            <p class="case__quote">«Всё прозрачно, отчёт по каждому этапу.» — Дмитрий, Краснодар</p>
+          </div>
+        </article>
+        <article class="case reveal">
+          <div class="case__img-wrap">
+            <img src="car-gle.webp" alt="Mercedes GLE 2022" class="case__photo">
+          </div>
+          <div class="case__body">
+            <div class="case__tag">🇦🇪 ОАЭ · Январь 2025</div>
+            <div class="case__name">Mercedes GLE 2022</div>
+            <div class="case__metrics">
+              <div><div class="case__metric-label">Срок</div><div class="case__metric-val">17 дней</div></div>
+              <div><div class="case__metric-label">Пробег</div><div class="case__metric-val">26 000 км</div></div>
+              <div><div class="case__metric-label">Под ключ</div><div class="case__metric-val">7,85 млн ₽</div></div>
+              <div><div class="case__metric-label">Экономия</div><div class="case__metric-val green">−1,15 млн ₽</div></div>
+            </div>
+            <p class="case__quote">«Не продавали — советовали. Редкость.» — Роман, Самара</p>
+          </div>
+        </article>
+        <article class="case reveal">
+          <div class="case__img-wrap">
+            <img src="car-chery.webp" alt="Chery Tiggo 8 Pro" class="case__photo">
+          </div>
+          <div class="case__body">
+            <div class="case__tag">🇨🇳 Китай · Декабрь 2024</div>
+            <div class="case__name">Chery Tiggo 8 Pro</div>
+            <div class="case__metrics">
+              <div><div class="case__metric-label">Срок</div><div class="case__metric-val">24 дня</div></div>
+              <div><div class="case__metric-label">Пробег</div><div class="case__metric-val">5 000 км</div></div>
+              <div><div class="case__metric-label">Под ключ</div><div class="case__metric-val">2,89 млн ₽</div></div>
+              <div><div class="case__metric-label">Экономия</div><div class="case__metric-val green">−350 000 ₽</div></div>
+            </div>
+            <p class="case__quote">«Нашли кроссовер с полным фаршем за разумные деньги.» — Алексей, СПб</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq__header"><span class="label">Вопросы и ответы</span><h2 class="title">FAQ</h2></div>
+  <div class="faq__list">
+    <div class="faq__item"><div class="faq__q"><span class="faq__q-text">Сколько стоит растаможить авто из Германии?</span><span class="faq__icon"></span></div><div class="faq__a"><div class="faq__a-inner">Для бензинового авто 2–3 года с двигателем 2.0 л таможня составит <strong>800 000–1 200 000 ₽</strong>. Полную стоимость называем до договора — никаких сюрпризов.</div></div></div>
+    <div class="faq__item"><div class="faq__q"><span class="faq__q-text">Как долго идёт перегон из Кореи или Германии?</span><span class="faq__icon"></span></div><div class="faq__a"><div class="faq__a-inner">Германия — <strong>15–25 дней</strong>, Корея — <strong>25–35 дней</strong> с морской доставкой, ОАЭ — <strong>14–20 дней</strong>. Сроки фиксируем в договоре.</div></div></div>
+    <div class="faq__item"><div class="faq__q"><span class="faq__q-text">Как вы защищаете клиента от потери денег?</span><span class="faq__icon"></span></div><div class="faq__a"><div class="faq__a-inner"><strong>1)</strong> договор с реквизитами, <strong>2)</strong> фото авто до первого платежа, <strong>3)</strong> аванс только после вашего одобрения. Три года — ноль потерянных авансов.</div></div></div>
+    <div class="faq__item"><div class="faq__q"><span class="faq__q-text">Что входит в услугу «под ключ»?</span><span class="faq__icon"></span></div><div class="faq__a"><div class="faq__a-inner">Поиск, проверка, выкуп, перегон, таможня, СБКТС и ПТС. <strong>Вам остаётся только поставить авто на учёт в ГИБДД</strong> — 30 минут самостоятельно.</div></div></div>
+    <div class="faq__item"><div class="faq__q"><span class="faq__q-text">Можно ли заказать конкретную модель?</span><span class="faq__icon"></span></div><div class="faq__a"><div class="faq__a-inner">Привозим <strong>под заказ</strong>. Описываете марку, модель, год, пробег и бюджет — ищем именно это. Если не вписывается в бюджет — предложим альтернативы.</div></div></div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-sec" id="form">
+  <div class="form-sec__layout">
+    <div class="form-sec__left">
+      <span class="label">Заявка</span>
+      <h2 class="title">Расчёт за 2 часа</h2>
+      <p class="sub form-sec__desc">Оставьте параметры — подберём варианты и пришлём полную стоимость с таможней. Без звонков каждые 20 минут.</p>
+      <div class="form-sec__promises">
+        <div class="promise">Расчёт бесплатно, без обязательств</div>
+        <div class="promise">Ответим в течение 2 часов</div>
+        <div class="promise">Предложим 2–3 варианта на выбор</div>
+        <div class="promise">Данные не передаём третьим лицам</div>
+        <div class="promise">Один контакт — без навязывания</div>
+      </div>
+    </div>
+    <div class="form-sec__right">
+      <form class="form" id="contactForm">
+        <div class="form__row">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Telegram или телефон" required>
+        </div>
+        <select required>
+          <option value="" disabled selected>Страна происхождения авто</option>
+          <option>Германия</option><option>Корея</option><option>Китай</option>
+          <option>ОАЭ</option><option>Япония</option>
+          <option>Не принципиально — ищите лучшее</option>
+        </select>
+        <div class="form__row">
+          <input type="text" placeholder="Марка и модель">
+          <input type="text" placeholder="Бюджет, ₽">
+        </div>
+        <textarea placeholder="Пожелания: год, пробег, цвет, комплектация..."></textarea>
+        <button type="submit" class="form__submit">Отправить заявку в Telegram →</button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="form-success__title">Заявка принята</div>
+        <p class="form-success__text">Ответим в течение 2 часов.<br>Пока посмотрите канал — там свежие авто и реальные сделки.</p>
+        <a href="https://t.me/luxportru" class="btn-red" target="_blank" rel="noopener">Перейти в канал</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="#" class="footer__logo">LUX<em>PORT</em></a>
+  <ul class="footer__links">
+    <li><a href="https://t.me/luxportru" target="_blank">Telegram-канал</a></li>
+    <li><a href="https://t.me/LuxportBot" target="_blank">Бот @LuxportBot</a></li>
+    <li><a href="#how">Процесс</a></li>
+    <li><a href="#calc">Калькулятор</a></li>
+    <li><a href="#directions">Направления</a></li>
+    <li><a href="#cases">Кейсы</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <p class="footer__copy">© 2025 Luxport · Перегон авто из-за рубежа</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
